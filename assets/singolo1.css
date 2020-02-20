@@ -20,11 +20,76 @@ body {
 }
 
 .slider {
-    width: 1020px;
-    height: 600px;
+    
     background-color: #f06c64;
 }
+.slider-content {
+    display: inline-flex;
+    width: 1020px;
+    height: 600px;
+    align-items: center;
+    position: relative;
+}
 
+.slider__scroll   {
+        width:16;
+        height:27px;
+ }
+
+ .slider__scroll-left {
+    margin-left: 40px;
+ }
+
+ .slider__scroll-right {
+    margin-right: 40px;
+ }
+
+ .iphone__vertical, .iphone__vertical__shadow, .iphone__horizontal, .iphone__horizontal__shadow {
+     position: relative;
+ }
+
+ .iphone__vertical {
+    margin-left: 55px;
+    z-index: 2;
+
+    top: 233px;
+    background-image: url(./img/bg-vertical.png);
+    background-repeat: no-repeat;
+    background-position: 10px 50px;
+    background-attachment: fixed;
+ }
+
+ .iphone__vertical__shadow {
+    z-index: 1;
+    top: -231px;
+    margin-left: 57px;
+ }
+
+ .iphone__horizontal {
+    transform: rotate(90deg);
+    margin-left: 75px;
+    z-index: 2;
+    background-image: url(./img/bg-vertical.png);
+    background-repeat: no-repeat;
+    background-position: 10px 50px;
+    
+ }
+
+ .iphone__horizontal__shadow {
+    z-index: 1;
+    margin-left: 75px;
+    
+ }
+
+.iphone__horizontal__shadow {
+    z-index: 1;
+    
+   /* transform:rotate(90deg)*/
+ }
+
+
+
+/*services*/
 .services__heading {
     margin:65px 40px 35px;
 }
