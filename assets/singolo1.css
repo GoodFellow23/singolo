@@ -21,3 +21,28 @@ body {
     height: 600px;
     background-color: #f06c64;
 }
+
+.layout-3-column {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas: "a a a";
+}
+
+.tool {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-areas: 
+    "i t t"
+    "i d d";
+}
+
+.tool__img {
+    grid-area: i;
+}
+
+.tool__title {
+    grid-area: t;
+}
+.tool__description {
+    grid-area: d;
+}
