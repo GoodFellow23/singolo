@@ -1,0 +1,23 @@
+html {
+    width: 1020px;
+}
+body {
+    margin: 0;
+}
+
+.header {
+    
+    height: 89px;
+    background-color: #2d303a;
+}
+
+.header__bottom {
+    height: 6px;
+    background-color: #323746;
+}
+
+.slider {
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+}
