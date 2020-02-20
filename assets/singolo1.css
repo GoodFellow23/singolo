@@ -1,8 +1,10 @@
 html {
     width: 1020px;
+    padding-left: 5px;
 }
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;    
 }
 
 .header {
@@ -14,6 +16,7 @@ body {
 .header__bottom {
     height: 6px;
     background-color: #323746;
+    margin-top: 50px;
 }
 
 .slider {
@@ -26,14 +29,24 @@ body {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-areas: "a a a";
+    margin-left:40px;
+    margin-right: 40px;
+    row-gap:26px;
+    column-gap:20px;
+    
 }
 
 .tool {
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: 60px 220px;
     grid-template-areas: 
-    "i t t"
-    "i d d";
+    "i t "
+    "i d ";
+    column-gap:20px;
+    row-gap:10px;
+    grid-template-rows: auto auto;
+    
+    
 }
 
 .tool__img {
@@ -42,7 +55,31 @@ body {
 
 .tool__title {
     grid-area: t;
+    margin:0;
+    width: 219px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.services__description {
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .tool__description {
     grid-area: d;
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
