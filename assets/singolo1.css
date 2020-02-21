@@ -11,14 +11,48 @@ body {
     background-color: #2d303a;
 }
 
+.header__content {
+    display: flex;
+    padding-left: 40px;
+    padding-top: 35px;
+    justify-content: space-between;
+}
+.header__navigation {
+    font-size: 12px;
+    line-height: 6px;
+    color: #f06c64;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+}
+.header__navigation a {
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    margin-top: 13px;
+}
+.logo {
+    
+}
+
 .header__bottom {
     height: 6px;
     background-color: #323746;
-    margin-top: 50px;
+    margin-top: 31px;
     z-index: 5;
     position: relative;
 }
 
+        /*Slider*/
 .slider {
     
     background-color: #f06c64;
