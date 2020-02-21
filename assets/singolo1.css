@@ -1,8 +1,6 @@
-html {
-    width: 1020px;
-    padding-left: 5px;
-}
+
 body {
+    width: 1020px;
     margin: 0;
     font-family: 'Lato', sans-serif;    
 }
@@ -28,7 +26,7 @@ body {
     width: 1020px;
     height: 600px;
     align-items: center;
-    position: relative;
+   /* position: relative;*/
 }
 
 .slider__scroll   {
@@ -44,50 +42,71 @@ body {
     margin-right: 40px;
  }
 
- .iphone__vertical, .iphone__vertical__shadow, .iphone__horizontal, .iphone__horizontal__shadow {
+ .iphone__vertical, .iphone__vertical__shadow, .iphone__horizontal, .iphone__horizontal__shadow, .iphone__vertical__screen,.iphone__horizontal__screen {
      position: relative;
  }
 
- .iphone__vertical {
-    margin-left: 55px;
-    z-index: 2;
-
-    top: 233px;
-    background-image: url(./img/bg-vertical.png);
-    background-repeat: no-repeat;
-    background-position: 10px 50px;
-    background-attachment: fixed;
+ .iphone-vertical {
+    
+    margin-top: -183px;
+    margin-left:55px ;
  }
+
+ .iphone-horizontal {
+    margin-top: 55px;
+ }
+
+ .iphone__vertical {
+    z-index: 2;
+ }
+
+ .iphone__vertical__screen {
+    height: 333px;
+    width: 188.5px;
+    z-index:5;
+    bottom: 398px;
+    left: 16px;
+    background-image: url(./img/bg-vertical.png);
+ }  
 
  .iphone__vertical__shadow {
     z-index: 1;
-    top: -231px;
-    margin-left: 57px;
+    top: 487px;
+    left: 2px;
  }
 
  .iphone__horizontal {
     transform: rotate(90deg);
-    margin-left: 75px;
+  /*  margin-left: 75px;*/
     z-index: 2;
-    background-image: url(./img/bg-vertical.png);
-    background-repeat: no-repeat;
-    background-position: 10px 50px;
+    padding-bottom: 194.5px;
+    
     
  }
 
  .iphone__horizontal__shadow {
     z-index: 1;
-    margin-left: 75px;
+    top: 464px;
+    left: -22px;
     
  }
 
-.iphone__horizontal__shadow {
-    z-index: 1;
-    
-   /* transform:rotate(90deg)*/
+.iphone__horizontal__screen {
+    height: 334px;
+    width: 188.5px;
+    z-index:5;
+    bottom: 398px;
+    background-image: url(./img/bg-horizontal.png);
+    transform: rotate(90deg);
+    left: 111px;
+    top: -497px;
  }
 
-
+.bg-bottom {
+    width: 1020px;
+    height: 15px;
+    background-color: #ea676b;
+}
 
 /*services*/
 .services__heading {
