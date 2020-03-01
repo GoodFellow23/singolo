@@ -334,3 +334,61 @@ body {
     height: 6px;
     background-color: #323746;
 }
+
+/*About Us */
+.about-us {
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+}
+
+.employee__photo {
+    width: 300px;
+    height: 300px;
+    background-color: #464b5e;
+    
+}
+
+.photo-AdamJensen {
+    
+    background-image: url(./img/About-Us/AdamJensen.png);
+    background-position: center;
+}
+.photo-DesmondMiles {
+    
+    background-image: url(./img/About-Us/DesmonMiles.png);
+    background-position: center;
+}
+.photo-ScolaraVisari {
+    
+    background-image: url(./img/About-Us/ScalaraVisari.png);
+    background-position: center;
+}
+
+.employee__contact__link {
+    display: inline-block;
+    
+}
+
+.employee__contact__link >div {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+.employee__fb {
+    
+   /* border: 1px solid #666d89;*/
+    background-image: url(./img/About-Us/contacts/facebook.png);
+}
+
+.employee__mail {
+    background-image: url(./img/About-Us/contacts/google+.png);
+}
+
+.employee__tw {
+    background-image: url(./img/About-Us/contacts/twitter.png);
+}
+
+.employee__li {
+    background-image: url(./img/About-Us/contacts/linkedin.png);
+}
