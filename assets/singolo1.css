@@ -62,7 +62,7 @@ body {
     width: 1020px;
     height: 600px;
     align-items: center;
-   /* position: relative;*/
+   
 }
 
 .slider__scroll   {
@@ -113,7 +113,7 @@ body {
 
  .iphone__horizontal {
     transform: rotate(90deg);
-  /*  margin-left: 75px;*/
+  
     z-index: 2;
     padding-bottom: 194.5px;
     
@@ -145,19 +145,27 @@ body {
 }
 
 /*services*/
-.services__heading {
+.services {
+    width: 1020px;
+    height: 500px;
+}
+.heading {
     margin:65px 40px 35px;
+    
 }
 
-.services__title {
+.title {
     font-size: 30px;
-    line-height: 18px;
-    color: #666d89;
+    line-height: 18px;    
     font-weight: 900;
     text-align: left;
 }
 
-.services__description {
+.services__title {
+    color: #666d89;
+}
+
+.description--darker {
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -223,4 +231,106 @@ body {
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/*Parfolio*/ 
+.portfolio {
+    width: 1020px;
+    height: 870px;
+    background-color: #2d303a;
+}
+
+.portfolio__title {
+    color: #666d89;
+}
+
+.description--lighter {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+.layout-4-column {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    /*grid-template-areas: "a a a a";*/
+   
+    margin:55px 40px 73px;
+    row-gap:26px;
+    column-gap:20px;    
+}
+
+.portfolio__img {
+    width: 220px;
+    height: 187px;
+}
+
+.img__1 {
+    background-image: url(./img/portfolio/1.svg);
+    background-position: center;
+}
+
+.img__2 {    
+    background-image: url(./img/portfolio/2.svg);
+    background-position: center;
+}
+
+.img__3 {    
+    background-image: url(./img/portfolio/3.svg);
+    background-position: center;
+}
+
+.img__4 {    
+    background-image: url(./img/portfolio/4.svg);
+    background-position: center;
+}
+
+.img__5 {    
+    background-image: url(./img/portfolio/5.svg);
+    background-position: center;
+}
+
+.img__6 {    
+    background-image: url(./img/portfolio/6.svg);
+    background-position: center;
+}
+
+.img__7 {    
+    background-image: url(./img/portfolio/7.svg);
+    background-position: center;
+}
+
+.img__8 {    
+    background-image: url(./img/portfolio/8.svg);
+    background-position: center;
+}
+
+.img__9 {    
+    background-image: url(./img/portfolio/9.svg);
+    background-position: center;
+}
+
+.img__10 {    
+    background-image: url(./img/portfolio/10.svg);
+    background-position: center;
+}
+
+.img__11 {    
+    background-image: url(./img/portfolio/11.svg);
+    background-position: center;
+}
+
+.img__12 {    
+    background-image: url(./img/portfolio/12.svg);
+    background-position: center;
+}
+
+.portfolio__bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
 }
