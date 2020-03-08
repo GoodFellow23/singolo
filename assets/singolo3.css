@@ -140,6 +140,11 @@ body {
     display: block;
 }
 
+.get-a-quote__bg-bottom {
+    height: 6px;
+    background-color: #ea676b;
+}
+
 /*Footer*/
 .footer__content {
     height: 76px;
@@ -157,3 +162,4 @@ body {
     margin-top:20px;
     margin-right: 40px;
 }
+
