@@ -182,9 +182,7 @@ body {
    
     margin:55px 40px 73px;
     row-gap:26px;
-    column-gap:20px;
-    
-    
+    column-gap:20px;    
 }
 
 .tool {
@@ -209,10 +207,12 @@ body {
     margin:0;
     width: 219px;
     font-size: 18px;
-    line-height: 18px;
-    color: #666d89;
+    line-height: 18px;    
     font-weight: 900;
     text-align: left;
+}
+.tool__title--on-white-bg {
+    color: #666d89;
 }
 
 .description {
@@ -225,12 +225,14 @@ body {
     width: 219px;
     height: 128px;
     font-size: 12px;
-    line-height: 22px;
-    color: #767e9e;
+    line-height: 22px;    
     font-weight: 400;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.tool__description--on-white-bg {
+    color: #767e9e;
 }
 
 /*Parfolio*/ 
@@ -244,7 +246,7 @@ body {
     color: #666d89;
 }
 
-.description--lighter {
+.description--on-dark-bg {
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -379,6 +381,8 @@ body {
     
    /* border: 1px solid #666d89;*/
     background-image: url(./img/About-Us/contacts/facebook.png);
+    
+    
 }
 
 .employee__mail {
