@@ -4,26 +4,24 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;    
 }
-
+section {
+    margin:0;
+    padding:0;
+}
 .header {
-    
-    height: 89px;
+    width: 1020px;
+    /*height: 89px;*/
     background-color: #2d303a;
 }
 
 .header__content {
     display: flex;
     padding-left: 40px;
-    padding-top: 35px;
+    padding-top: 34px;
     justify-content: space-between;
 }
 .header__navigation {
-    font-size: 12px;
-    line-height: 6px;
-    color: #f06c64;
-    font-family: "Lato";
-    font-weight: 700;
-    text-align: left;
+    
     display: flex;
     width: 370px;
     justify-content: space-between;
@@ -60,18 +58,18 @@ body {
 .slider-content {
     display: inline-flex;
     width: 1020px;
-    height: 600px;
+    padding: 53px 0px 58px;
     align-items: center;
    
 }
 
 .slider__scroll   {
-        width:16;
+       
         height:27px;
  }
 
  .slider__scroll-left {
-    margin-left: 40px;
+    margin-left: 42px;
  }
 
  .slider__scroll-right {
@@ -82,38 +80,40 @@ body {
      position: relative;
  }
 
- .iphone-vertical {
+ .iphone-vertical {    
+    margin-left: 52px;
+    height: 483px;
     
-    margin-top: -173px;
-    margin-left:54px ;
  }
 
  .iphone-horizontal {
-    margin-top: 66px;
+   height: 218px;
+   margin-top: 5px;
+   
  }
 
  .iphone__vertical {
     z-index: 2;
+    bottom: 487px;
  }
 
  .iphone__vertical__screen {
     height: 333px;
     width: 188.5px;
     z-index:5;
-    bottom: 398px;
+    bottom: 885px;
     left: 16px;
     background-image: url(./assets/img/bg-vertical.png);
  }  
 
  .iphone__vertical__shadow {
     z-index: 1;
-    top: 487px;
     left: 2px;
  }
 
  .iphone__horizontal {
     transform: rotate(90deg);
-  
+    bottom: 477px;
     z-index: 2;
     padding-bottom: 194.5px;
     
@@ -122,8 +122,8 @@ body {
 
  .iphone__horizontal__shadow {
     z-index: 1;
-    top: 464px;
     left: -22px;
+    bottom: 13px;
     
  }
 
@@ -131,26 +131,28 @@ body {
     height: 334px;
     width: 188.5px;
     z-index:5;
-    bottom: 398px;
+    bottom: 974px;
     background-image: url(./assets/img/bg-horizontal.png);
     transform: rotate(90deg);
     left: 111px;
-    top: -497px;
+    
  }
 
 .bg-bottom {
     width: 1020px;
-    height: 15px;
+    height: 7.5px;
     background-color: #ea676b;
 }
 
 /*services*/
 .services {
     width: 1020px;
-    height: 500px;
+    background-color: #f2f2f2;
+    
 }
 .heading {
-    margin:65px 40px 35px;
+    margin:0px 40px 0px;
+    padding-top: 68px;
     
 }
 
@@ -180,8 +182,8 @@ body {
     grid-template-columns:repeat(3, 1fr);
     grid-template-areas: "a a a";
    
-    margin:55px 40px 73px;
-    row-gap:26px;
+    margin:55px 40px 53px;
+    row-gap:23px;
     column-gap:20px;    
 }
 
@@ -216,16 +218,19 @@ body {
 }
 
 .description {
-    height: 50px;
+    height: 72px;
     overflow: hidden;
     text-overflow: ellipsis;
+    
 }
+.services__description {
+    padding-top: 3px;
+}
+
 .tool__description {
     grid-area: d;
-    width: 219px;
-    height: 128px;
     font-size: 12px;
-    line-height: 22px;    
+    line-height: 19px;    
     font-weight: 400;
     text-align: left;
     overflow: hidden;
@@ -235,26 +240,37 @@ body {
     color: #767e9e;
 }
 
+.services__bg-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
+
 /*Parfolio*/ 
 .portfolio {
     width: 1020px;
-    height: 870px;
+   
     background-color: #2d303a;
+}
+
+.portfolio__navigation {
+    display:flex;
 }
 
 .portfolio__title {
     color: #666d89;
 }
 
+.description__portfolio {
+    height:35px;
+    margin-top: 27px;
+}
+
 .description--on-dark-bg {
-    width: 940px;
-    height: 57px;
-    font-size: 18px;
-    line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 300;
-    text-align: left;
+    padding:0px;
+    margin:0px;
+    
+
 }
 .layout-4-column {
     display:grid;
@@ -265,6 +281,38 @@ body {
     row-gap:26px;
     column-gap:20px;    
 }
+
+.navigation__link {
+    display: block;    
+    height: 20px;
+    border-radius: 5px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    text-decoration: none;
+    margin-right: 9px;    
+}
+
+.link--selected {
+    border: 1px solid #c5c5c5;
+    color:#c5c5c5;
+}
+
+.navigation__link--all {
+    width: 28px;
+}
+
+.navigation__link--web-design {
+    width: 77px;
+}
+
+.navigation__link--graphic {
+    width: 92px;
+}
+
+.navigation__link--artwork {
+    width: 56px;
+}
+
 
 .portfolio__img {
     width: 220px;

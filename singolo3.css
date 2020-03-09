@@ -118,8 +118,8 @@ body {
 
 .tool__description {
     grid-area: d;
-    width: 219px;
-    height: 128px;
+   /* width: 219px;
+    height: 128px;*/
     font-size: 12px;
     line-height: 22px;    
     font-weight: 400;
