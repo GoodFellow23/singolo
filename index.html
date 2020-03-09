@@ -7,7 +7,7 @@
     <title>Singolo</title>
     <link rel="stylesheet" href="style.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -128,10 +128,10 @@
                         non sem eu, lobortis ultricies tortor</p>
                 </div>
                 <div class="portfolio__navigation">
-                    <a href="#" class="navigation__link navigation__link--all link--selected"><div class=" tool__description description--on-dark-bg">All</div></a>
-                    <a href="#" class="navigation__link navigation__link--web-design"><div class=" tool__description description--on-dark-bg">Web Design</div></a>
-                    <a href="#" class="navigation__link navigation__link--graphic"><div class=" tool__description description--on-dark-bg">Graphic Design</div></a>
-                    <a href="#" class="navigation__link navigation__link--artwork"><div class=" tool__description description--on-dark-bg">Artwork</div></a>  
+                    <a href="#" class="navigation__link navigation__link--all link--selected"><div class="tool__description description--on-dark-bg">All</div></a>
+                    <a href="#" class="navigation__link navigation__link--web-design"><div class="tool__description description--on-dark-bg">Web Design</div></a>
+                    <a href="#" class="navigation__link navigation__link--graphic"><div class="tool__description description--on-dark-bg">Graphic Design</div></a>
+                    <a href="#" class="navigation__link navigation__link--artwork"><div class="tool__description description--on-dark-bg">Artwork</div></a>  
                 </div>                
             </div>
             <div class="layout-4-column">
@@ -148,21 +148,19 @@
                 <div class="portfolio__img img__11"></div>
                 <div class="portfolio__img img__12"></div>
             </div>
-            <div class="portfolio__bg-bottom">
-
-            </div>
-        </a>
+            <div class="portfolio__bg-bottom"></div>
+        </div>
     </section>
     <section class="about-us">
         <div class="wrapper">
             <div class="heading about-us__heading">
                 <span class="title portfolio__title">About Us</span>
                 <div class="description">
-                    <p class="description__about-us description--darker">et elit non, sagittis ultricies arcu. Aliquam magna nisl, fermentum
-                        non sem eu, lobortis ultric</p>
+                    <p class="description__about-us description--darker">Et elit non, sagittis ultricies arcu. Aliquam magna nisl, fermentum
+                        non sem eu, lobortis ultricsagittis ultricies arcu. Aliquam magna nisl, fermentum non sem eu, lobortis ultricies tortor</p>
                 </div>
             </div>
-            <div class="layout-3-column">
+            <div class="layout-3-column layout__employee">
                 <div class="employee">
                     <div class="employee__photo photo-AdamJensen"></div>
                     <div class="title employee__name">
@@ -214,6 +212,7 @@
 
             </div>
         </div>
+        <div class="about-us__bg-bottom"></div>
     </section>
     <section class="get-a-quote">
         <div class="wrapper">
@@ -228,24 +227,22 @@
                     <div>
                         <form action="feedback-form" >
                             <!--FIRST NAME -->
-                            <div class="feedback-form__name">                    
+                            <div class="feedback-form__input feedback-form__name">                    
                                 <input type="text" name="name" placeholder="Name (Required)" id="name" class="feedback__input">
                                 <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- @mail -->
-                            <div class="feedback-form__email">                    
+                            <div class="feedback-form__input feedback-form__email">                    
                                 <input type="email" name="email" placeholder="Email (Required)" id="email" class="feedback__input">
                                 <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- SUBJECT -->
-                            <div class="feedback-form__subject">                    
+                            <div class="feedback-form__input feedback-form__subject">                    
                                 <input type="text" name="subject" placeholder="Subject" id="secondName" class="feedback__input">
-                                <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- QUESTION -->
-                            <div class="feedback-form__description-area">
-                                <textarea class="feedback__input feedback-area" name="question" id="question-field" cols="" rows="200" placeholder="Describe your project in detail..."></textarea>
-                                <span class="message-error">Incorrect value</span>
+                            <div class="feedback-form__text-area feedback-form__description-area">
+                                <textarea class="feedback__input feedback-area" name="question" id="question-field" cols="" rows="" placeholder="Describe your project in detail..."></textarea>
                             </div>
                             <!-- SUBMIT -->
                             <div class="form-data submit">

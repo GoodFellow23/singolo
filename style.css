@@ -161,6 +161,7 @@ section {
     line-height: 18px;    
     font-weight: 900;
     text-align: left;
+    margin-top: 14px;
 }
 
 .services__title {
@@ -169,7 +170,7 @@ section {
 
 .description--darker {
     width: 940px;
-    height: 57px;
+    height: 33px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -182,8 +183,8 @@ section {
     grid-template-columns:repeat(3, 1fr);
     grid-template-areas: "a a a";
    
-    margin:55px 40px 53px;
-    row-gap:23px;
+    margin:55px 40px 64px;
+    row-gap:32px;
     column-gap:20px;    
 }
 
@@ -218,7 +219,7 @@ section {
 }
 
 .description {
-    height: 72px;
+  /*  height: 72px;*/
     overflow: hidden;
     text-overflow: ellipsis;
     
@@ -275,10 +276,8 @@ section {
 .layout-4-column {
     display:grid;
     grid-template-columns:repeat(4, 1fr);
-    /*grid-template-areas: "a a a a";*/
-   
-    margin:55px 40px 73px;
-    row-gap:26px;
+    margin:19px 40px 68px;
+    row-gap:20px;
     column-gap:20px;    
 }
 
@@ -290,6 +289,10 @@ section {
     border: 1px solid #666d89;
     text-decoration: none;
     margin-right: 9px;    
+}
+
+.navigation__link > div{
+    text-align: center;
 }
 
 .link--selected {
@@ -392,6 +395,15 @@ section {
     background-color: #f2f2f2;
 }
 
+.description__about-us {
+    height: 35px;
+    margin-top: 22px;
+}
+
+.layout__employee {
+    margin: 50px 40px 64px;
+}
+
 .employee__photo {
     width: 300px;
     height: 300px;
@@ -417,6 +429,8 @@ section {
 
 .employee__contact__link {
     display: inline-block;
+    margin-top: 13.5px;
+    padding-right: 5px;
     
 }
 
@@ -445,11 +459,17 @@ section {
     background-image: url(./assets/img/About-Us/contacts/linkedin.png);
 }
 
+.about-us__bg-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
+
 /*Get a Quote */
 
 .get-a-quote {
     width: 1020px;
     background-color: #f06c64;
+    margin-top: 4px;
 }
 
 
@@ -459,15 +479,13 @@ section {
 }
 
 .get-a-quote__title {
-    padding-top: 70px;
-    padding-left: 40px;
+    
 }
 
 
 
 .description__get-a-quote {
-    padding-top: 35px;
-    padding-left: 40px;
+    margin-top: 23px;
     
 }
 
@@ -488,7 +506,7 @@ section {
     grid-template-columns:repeat(2, 1fr);
     grid-template-areas: "a a";
    
-    margin:50px 40px 0px;
+    margin: 46px 0px 41px;
     row-gap:26px;
     column-gap:20px;    
 }
@@ -496,10 +514,14 @@ section {
 .message-error {
     visibility: hidden;
 }
+.feedback-form__input {
+    height: 36px;
+    margin-bottom: 18px;
+}
 
 .feedback__input {
     width: 619px;
-    height: 40px;
+    height: 36px;
     border-radius: 5x;
     border: 0;
     background-color: #d6564f;
@@ -507,8 +529,8 @@ section {
 }
 
 .feedback-area {
-    width: 619px;
-    height: 202px;
+    width: 615px;
+    height: 198px;
     resize: none;
 }
 
@@ -519,6 +541,12 @@ section {
     color: #f48c8f;
     font-weight: 400;
     text-align: left;
+    font-size: 12px;
+line-height: 22px;
+color: #f48c8f;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;   
 }
 
 .contact__info {
@@ -530,6 +558,14 @@ section {
 .contact__description {
     width: 300px;
     height: 74px;
+    width: 300px;
+height: 175px;
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
 }
 
 .tool__title--on-colored-bg {
@@ -539,6 +575,7 @@ section {
 
 .tool__description--on-colored-bg {
     color: #f0d8d9;
+    line-height: 20px;
 }
 
 .contact__info {
@@ -554,6 +591,10 @@ section {
 .get-a-quote__bg-bottom {
     height: 6px;
     background-color: #ea676b;
+}
+
+.form-button {
+
 }
 
 /*Footer*/
