@@ -102,7 +102,7 @@ body {
     z-index:5;
     bottom: 398px;
     left: 16px;
-    background-image: url(./img/bg-vertical.png);
+    background-image: url(./assets/img/bg-vertical.png);
  }  
 
  .iphone__vertical__shadow {
@@ -132,7 +132,7 @@ body {
     width: 188.5px;
     z-index:5;
     bottom: 398px;
-    background-image: url(./img/bg-horizontal.png);
+    background-image: url(./assets/img/bg-horizontal.png);
     transform: rotate(90deg);
     left: 111px;
     top: -497px;
@@ -272,62 +272,62 @@ body {
 }
 
 .img__1 {
-    background-image: url(./img/portfolio/1.svg);
+    background-image: url(./assets/img/portfolio/1.svg);
     background-position: center;
 }
 
 .img__2 {    
-    background-image: url(./img/portfolio/2.svg);
+    background-image: url(./assets/img/portfolio/2.svg);
     background-position: center;
 }
 
 .img__3 {    
-    background-image: url(./img/portfolio/3.svg);
+    background-image: url(./assets/img/portfolio/3.svg);
     background-position: center;
 }
 
 .img__4 {    
-    background-image: url(./img/portfolio/4.svg);
+    background-image: url(./assets/img/portfolio/4.svg);
     background-position: center;
 }
 
 .img__5 {    
-    background-image: url(./img/portfolio/5.svg);
+    background-image: url(./assets/img/portfolio/5.svg);
     background-position: center;
 }
 
 .img__6 {    
-    background-image: url(./img/portfolio/6.svg);
+    background-image: url(./assets/img/portfolio/6.svg);
     background-position: center;
 }
 
 .img__7 {    
-    background-image: url(./img/portfolio/7.svg);
+    background-image: url(./assets/img/portfolio/7.svg);
     background-position: center;
 }
 
 .img__8 {    
-    background-image: url(./img/portfolio/8.svg);
+    background-image: url(./assets/img/portfolio/8.svg);
     background-position: center;
 }
 
 .img__9 {    
-    background-image: url(./img/portfolio/9.svg);
+    background-image: url(./assets/img/portfolio/9.svg);
     background-position: center;
 }
 
 .img__10 {    
-    background-image: url(./img/portfolio/10.svg);
+    background-image: url(./assets/img/portfolio/10.svg);
     background-position: center;
 }
 
 .img__11 {    
-    background-image: url(./img/portfolio/11.svg);
+    background-image: url(./assets/img/portfolio/11.svg);
     background-position: center;
 }
 
 .img__12 {    
-    background-image: url(./img/portfolio/12.svg);
+    background-image: url(./assets/img/portfolio/12.svg);
     background-position: center;
 }
 
@@ -353,17 +353,17 @@ body {
 
 .photo-AdamJensen {
     
-    background-image: url(./img/About-Us/AdamJensen.png);
+    background-image: url(./assets/img/About-Us/AdamJensen.png);
     background-position: center;
 }
 .photo-DesmondMiles {
     
-    background-image: url(./img/About-Us/DesmonMiles.png);
+    background-image: url(./assets/img/About-Us/DesmonMiles.png);
     background-position: center;
 }
 .photo-ScolaraVisari {
     
-    background-image: url(./img/About-Us/ScalaraVisari.png);
+    background-image: url(./assets/img/About-Us/ScalaraVisari.png);
     background-position: center;
 }
 
@@ -380,19 +380,19 @@ body {
 .employee__fb {
     
    /* border: 1px solid #666d89;*/
-    background-image: url(./img/About-Us/contacts/facebook.png);
+    background-image: url(./assets/img/About-Us/contacts/facebook.png);
     
     
 }
 
 .employee__mail {
-    background-image: url(./img/About-Us/contacts/google+.png);
+    background-image: url(./assets/img/About-Us/contacts/google+.png);
 }
 
 .employee__tw {
-    background-image: url(./img/About-Us/contacts/twitter.png);
+    background-image: url(./assets/img/About-Us/contacts/twitter.png);
 }
 
 .employee__li {
-    background-image: url(./img/About-Us/contacts/linkedin.png);
+    background-image: url(./assets/img/About-Us/contacts/linkedin.png);
 }
