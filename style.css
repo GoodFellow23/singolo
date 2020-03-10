@@ -38,7 +38,9 @@ section {
     text-decoration: none;
     margin-top: 13px;
 }
-.logo {
+
+.header__navigation--selected {
+    color: #f06c64;
     
 }
 
