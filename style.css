@@ -2,7 +2,8 @@
 body {
     width: 1020px;
     margin: 0;
-    font-family: 'Lato', sans-serif;    
+    font-family: 'Lato', sans-serif;  
+    margin: auto;  
 }
 section {
     margin:0;
@@ -247,6 +248,8 @@ section {
 .tool__description--on-white-bg {
     color: #767e9e;
 }
+
+
 
 .services__bg-bottom {
     height: 6px;
