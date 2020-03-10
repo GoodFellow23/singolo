@@ -227,12 +227,12 @@
                         <form action="feedback-form" >
                             <!--FIRST NAME -->
                             <div class="feedback-form__input feedback-form__name">                    
-                                <input type="text" name="name" placeholder="Name (Required)" id="name" class="feedback__input">
+                                <input type="text" name="name" placeholder="Name (Required)" id="name" class="feedback__input" required pattern="[A-Z][A-Za-z' -]+">
                                 <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- @mail -->
                             <div class="feedback-form__input feedback-form__email">                    
-                                <input type="email" name="email" placeholder="Email (Required)" id="email" class="feedback__input">
+                                <input type="email" name="email" placeholder="Email (Required)" id="email" class="feedback__input" required>
                                 <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- SUBJECT -->
