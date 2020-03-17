@@ -11,41 +11,41 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper">
-            <div class="header__content">
+            <div class="header__content" id="header__content">
                 <a href="#" class="logo">
                     <h1 hidden>Singolo</h1>
                     <img src="./assets/img/SINGOLO_.png" alt="singolo">
                 </a>
-                <nav class="header__navigation">                    
-                    <a href="#" ><span class="header__navigation__link header__navigation--selected">HOME</span></a>
-                    <a href="#"><span class="header__navigation__link">SERVICES</span></a>
-                    <a href="#"><span class="header__navigation__link">PORTFOLIO</span></a>
-                    <a href="#"><span class="header__navigation__link">ABOUT</span></a>
-                    <a href="#"><span class="header__navigation__link">CONTACT</span></a>
+                <nav class="header__navigation" id="nav">                    
+                    <a href="#"><span class="header__navigation__link header__navigation--selected">HOME</span></a>
+                    <a href="#services"><span class="header__navigation__link">SERVICES</span></a>
+                    <a href="#portfolio"><span class="header__navigation__link">PORTFOLIO</span></a>
+                    <a href="#about-us"><span class="header__navigation__link">ABOUT</span></a>
+                    <a href="#get-a-quote"><span class="header__navigation__link">CONTACT</span></a>
                 </nav>
             </div>
             
         </div>
-        <div class="header__bottom"></div>
+        <div class="header__bottom" id="header-bottom"></div>
     </header>
     <section class="slider">
         <div class="wrapper">
-            <div class="slider-content">
+            <div class="slider-content" id="slider">
                 <div class="slider__scroll slider__scroll-left">
                     <a href="#"><img src="./assets/icon/scroll-left.svg" alt="left" class="scroll-left"></a>
                 </div>
-                <div class="iphone-vertical">
+                <div class="iphone-vertical" id="iphone-vertical">
                     <img src="./assets/img/shadow-vertical.png" alt="shadow" class="iphone__vertical__shadow">
                     <img src="./assets/img/iPhone.svg" alt="vertical" class="iphone__vertical">
                     <div class="iphone__vertical__screen"></div>
                     
                 </div>
-                <div class="iphone-horizontal">
+                <div class="iphone-horizontal" id='iphone-horizontal'>
                     <img src="./assets/img/shadow-horizontal.png" alt="shadow" class="iphone__horizontal__shadow">
                     <img src="./assets/img/iPhone.svg" alt="horizontal" class="iphone__horizontal">                    
-                    <div class="iphone__screen iphone__horizontal__screen"></div>
+                    <div class="iphone__horizontal__screen iphone__screen "></div>
                 </div>
                 <div class="slider__scroll slider__scroll-right">
                     <a href="#"><img src="./assets/icon/scroll-right.svg" alt="left" class="scroll-right"></a>
@@ -54,7 +54,7 @@
             <div class="bg-bottom"></div>
         </div>
     </section>
-    <section class="services">
+    <section class="services"><a name="services"></a>
         <div class="wrapper">
             <div class="heading services__heading">
                 <span class="title services__title">Our Services</span>
@@ -120,7 +120,7 @@
         </div>
         <div class="services__bg-bottom"></div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio"><a name="portfolio"></a>
         <div class="wrapper">
             <div class="heading portfolio__heading">
                 <span class="title portfolio__title">Portfolio</span>                
@@ -152,7 +152,7 @@
             <div class="portfolio__bg-bottom"></div>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us"><a name="about-us"></a>
         <div class="wrapper">
             <div class="heading about-us__heading">
                 <span class="title portfolio__title">About Us</span>
@@ -214,7 +214,7 @@
         </div>
         <div class="about-us__bg-bottom"></div>
     </section>
-    <section class="get-a-quote">
+    <section class="get-a-quote"><a name="get-a-quote"></a>
         <div class="wrapper">
             <div class="heading get-a-quote__heading">
                 <div class="get-a-quote__title">
@@ -293,6 +293,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
