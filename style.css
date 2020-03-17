@@ -328,6 +328,8 @@ section {
 .link--selected {
     border: 1px solid #c5c5c5;
     color:#c5c5c5;
+    border-radius: 5px;
+
 }
 
 .navigation__link--all {
