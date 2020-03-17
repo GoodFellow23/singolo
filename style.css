@@ -80,14 +80,15 @@ section {
 .slider-content {
     display: inline-flex;
     width: 1020px;
+    height: 483px;
     padding: 53px 0px 58px;
     align-items: center;
    
 }
 
 .slider__scroll   {
-       
-        height:27px;
+    cursor: pointer;
+    height:27px;
  }
 
  .slider__scroll-left {
