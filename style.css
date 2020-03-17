@@ -351,6 +351,10 @@ section {
     width: 220px;
     height: 187px;
 }
+.img-active {
+    border: 5px solid #F06C64;
+    margin: -5px;
+}
 
 .img__1 {
     background-image: url(./assets/img/portfolio/1.svg);

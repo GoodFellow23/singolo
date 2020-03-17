@@ -6,6 +6,7 @@ const headerBottom = document.getElementById('header-bottom');
 const slider = document.getElementById('slider');
 let numSlider = 0;
 const scrolls = document.getElementsByClassName('slider__scroll');
+const portfolioImgs = document.getElementById('portfolio-imgs');
 
 
 //Navigation 
@@ -70,22 +71,9 @@ for ( el  of scrolls)  {
     });
 }
 
-// scrollLeft.addEventListener('click',(event) => {
-//     console.log('start');
-//     if(numSlider == 0) {
-//         console.log('in');
-//         numSlider++;
-//         slider.style.backgroundImage = "url('./assets/img/Slide-2.png')";
-//         slider.style.justifyContent = "space-between";
-//         document.getElementById('iphone-vertical').style.display = "none";
-//         document.getElementById('iphone-horizontal').style.display = "none";
-//         document.getElementById('');
-//     } else if (numSlider == 1) {
-//         numSlider--;
-//         slider.style.backgroundImage = "initial";
-//         document.getElementById('iphone-vertical').style.display = "initial";
-//         document.getElementById('iphone-horizontal').style.display = "initial";
-
-//     }
-//     console.log('end');
-// });
+portfolioImgs.addEventListener('click',(event) => {
+    portfolioImgs.querySelectorAll('.portfolio__img').forEach(el => {
+        el.classList.remove('img-active');
+    });
+    event.target.classList.add('img-active');
+});
