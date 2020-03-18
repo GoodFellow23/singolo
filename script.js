@@ -102,3 +102,21 @@ portfolioTab.addEventListener('click',(event) => {
         indexImg++;
     });
 });
+
+const MassageBlock = document.getElementById('feedback-block');
+const CloseMSG = document.getElementById('close-msg');
+
+const openWindow = () => {
+    MassageBlock.style.top =  window.pageYOffset.toString()+'px';
+    header.style.zIndex = "0";
+    document.querySelector('body').style.overflow = "hidden";
+    MassageBlock.classList.remove('feedback--hidden');
+    const string = document.getElementById('name').value.toString();
+   // document.getElementById('result').innerText = string;
+};
+
+CloseMSG.addEventListener('click',() => {
+    MassageBlock.classList.add('feedback--hidden');
+    header.style.zIndex = "1";
+    document.querySelector('body').style.overflow = "initial";
+});

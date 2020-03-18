@@ -224,7 +224,7 @@
                 </div>
                 <div class="layout-2-column">
                     <div>
-                        <form action="feedback-form" >
+                        <form action="feedback-form" onsubmit="openWindow();return false" >
                             <!--FIRST NAME -->
                             <div class="feedback-form__input feedback-form__name">                    
                                 <input type="text" name="name" placeholder="Name (Required)" id="name" class="feedback__input" required pattern="[A-Z][A-Za-z' -]+">
@@ -245,9 +245,9 @@
                             </div>
                             <!-- SUBMIT -->
                             <div class="form-data submit">
-                                <button class="form-button" type="submit">Submit</button>
+                                <button id="open-msg"class="form-button" type="submit">Submit</button>
                             </div>
-                        </form>
+                        </form>                       
                     </div>
                     <div class="contact">
                         <div>
@@ -292,6 +292,12 @@
             </div>
         </div>
     </footer>
+    <div id="feedback-block" class="feedback-block feedback--hidden">
+        <div id="feedback-message" class="feedback-message">
+            <p>Text:<span id="result"></span></p>
+            <button id="close-msg">OK</button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 
