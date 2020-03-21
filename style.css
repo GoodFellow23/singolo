@@ -662,9 +662,12 @@ text-align: left;
 .feedback-message {
     position: absolute;
     top:50%;
-    left:50%;
+    left:43%;
+    width: 200px;
+    height: auto;
     border:2px solid black;
     text-align: center;
+    background: white;
 }
 
 

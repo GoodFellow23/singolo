@@ -237,7 +237,7 @@
                             </div>
                             <!-- SUBJECT -->
                             <div class="feedback-form__input feedback-form__subject">                    
-                                <input type="text" name="subject" placeholder="Subject" id="secondName" class="feedback__input">
+                                <input type="text" name="subject" placeholder="Subject" id="subject" class="feedback__input">
                             </div>
                             <!-- QUESTION -->
                             <div class="feedback-form__text-area feedback-form__description-area">
@@ -294,7 +294,12 @@
     </footer>
     <div id="feedback-block" class="feedback-block feedback--hidden">
         <div id="feedback-message" class="feedback-message">
-            <p>Text:<span id="result"></span></p>
+            
+            <div ><span>The letter was sent</span></div>
+            <div class="tool__description"><span id="subject-result"></span></div>
+            <div class="tool__description"><span id="description-result"></span></div>
+            
+            
             <button id="close-msg">OK</button>
         </div>
     </div>
