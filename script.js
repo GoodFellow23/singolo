@@ -30,12 +30,12 @@ window.onscroll = () => {
         headerCont.classList.remove('sticky-content');
         headerBottom.classList.remove('sticky-bottom');
     }
-    nav.querySelectorAll('.header__navigation__link').forEach(el => {
-        el.classList.remove('header__navigation--selected');
-        if(el.offsetTop <= window.pageYOffset && (el.offsetTop + el.offsetHeight) > window.pageYOffset ) {
-            el.classList.add('header__navigation--selected');
-        }
-    });
+   // nav.querySelectorAll('.header__navigation__link').forEach(el => {
+   //     el.classList.remove('header__navigation--selected');
+   //     if(el.offsetTop <= window.pageYOffset && (el.offsetTop + el.offsetHeight) > window.pageYOffset ) {
+   //         el.classList.add('header__navigation--selected');
+   //     }
+  //  });
     
 };
 
@@ -118,17 +118,13 @@ const openWindow = () => {
     header.style.zIndex = "0";
     document.querySelector('body').style.overflow = "hidden";
     MassageBlock.classList.remove('feedback--hidden');
-    debugger;
     const subject = document.getElementById('subject').value.toString();
-    debugger;
     const description = document.getElementById('question-field').value.toString();
-    debugger;
     if(subject == "") {
         document.getElementById('subject-result').innerText = "No subject";
     } else {
         document.getElementById('subject-result').innerText = "Subject: " + subject;
     }
-    debugger;
     if(description == "") {
         document.getElementById('description-result').innerText = "No description";
     } else {
