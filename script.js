@@ -20,8 +20,9 @@ nav.addEventListener('click', (event) => {
 });
 
 //Sticky header
-window.onscroll = () => {
-    if (window.pageYOffset > sticky + 40) {
+document.addEventListener('scroll',() => {
+    const currY = window.scrollY + 40;
+     if (currY > sticky + 40) {
         header.classList.add('sticky-header');  
         headerCont.classList.add('sticky-content');
         headerBottom.classList.add('sticky-bottom');
@@ -30,14 +31,20 @@ window.onscroll = () => {
         headerCont.classList.remove('sticky-content');
         headerBottom.classList.remove('sticky-bottom');
     }
-   // nav.querySelectorAll('.header__navigation__link').forEach(el => {
-   //     el.classList.remove('header__navigation--selected');
-   //     if(el.offsetTop <= window.pageYOffset && (el.offsetTop + el.offsetHeight) > window.pageYOffset ) {
-   //         el.classList.add('header__navigation--selected');
-   //     }
-  //  });
     
-};
+    const section = document.querySelectorAll('section>:first-child');
+    section.forEach(el => {        
+        if(el.parentNode.offsetTop < currY && (el.parentNode.offsetTop + el.parentNode.offsetHeight) > currY) {
+            nav.querySelectorAll('.header__navigation__link').forEach(l => {
+                l.classList.remove('header__navigation--selected');
+                if (el.id === l.parentNode.getAttribute('href').substring(1)) {
+                    l.classList.add('header__navigation--selected');
+                };
+            });    
+        }
+    });    
+});
+
 
 //Переключение экранов
 slider.addEventListener('click',(event) => {
@@ -130,9 +137,6 @@ const openWindow = () => {
     } else {
         document.getElementById('description-result').innerText = "Description: " + description;
     }
-    
-    
-
 };
 
 CloseMSG.addEventListener('click',() => {
