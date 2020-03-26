@@ -145,6 +145,10 @@ section {
     background-image: url(./assets/img/bg-vertical.png);
     z-index: 0;
  }  
+ .screen--hide {
+     z-index:-1;
+     opacity: 0;
+ }
 
  .iphone__vertical__shadow {   
     left: 2px;

@@ -49,11 +49,11 @@ document.addEventListener('scroll',() => {
 //Change screen
 slider.addEventListener('click',(event) => {
     if(event.target.classList.contains('iphone__vertical__screen')) {
-       if(event.target.style.zIndex == '0') {
-        event.target.style.zIndex = '-1';
-       } else {
-        event.target.style.zIndex = '0';
-       }
+        if(event.target.style.backgroundImage == 'none') {
+            event.target.style.backgroundImage = "url('./assets/img/bg-vertical.png')";
+           } else {
+            event.target.style.backgroundImage = 'none';
+           }
     }
     if(event.target.classList.contains('iphone__horizontal__screen')) {
         if(event.target.style.backgroundImage == 'none') {
@@ -64,12 +64,14 @@ slider.addEventListener('click',(event) => {
      }
 });
 
-//Carousel
+//
 
 let numSlider=1;
 let rightValue = 1020;
 let counter = 0;
 scrolls[0].addEventListener('click',() => {
+    document.querySelector('.iphone__horizontal__screen').style.backgroundImage = "url('./assets/img/bg-horizontal.png')";
+    document.querySelector('.iphone__vertical__screen').style.backgroundImage = "url('./assets/img/bg-vertical.png')";
     if(numSlider == 0) { 
         document.querySelectorAll('.slider-content').forEach(el => el.style.right = '2040px');
         numSlider = 2;
@@ -89,6 +91,8 @@ scrolls[0].addEventListener('click',() => {
     },1);
 });
 scrolls[1].addEventListener('click',() => {
+    document.querySelector('.iphone__horizontal__screen').style.backgroundImage = "url('./assets/img/bg-horizontal.png')";
+    document.querySelector('.iphone__vertical__screen').style.backgroundImage = "url('./assets/img/bg-vertical.png')";
     if(numSlider == 2) { 
         document.querySelectorAll('.slider-content').forEach(el => el.style.right = '0px');
         numSlider = 0;
