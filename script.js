@@ -4,7 +4,7 @@ const sticky = header.offsetTop;
 const headerCont = document.getElementById('header__content');
 const headerBottom = document.getElementById('header-bottom');
 const slider = document.getElementById('slider');
-let numSlider = 0;
+
 const scrolls = document.getElementsByClassName('slider__scroll');
 const portfolioImgs = document.getElementById('portfolio-imgs');
 const portfolioTab = document.getElementById('portfolio-tab');
@@ -19,7 +19,7 @@ nav.addEventListener('click', (event) => {
     event.target.classList.add('header__navigation--selected');
 });
 
-//Sticky header
+//Sticky header/auto select
 document.addEventListener('scroll',() => {
     const currY = window.scrollY + 40;
      if (currY > sticky + 40) {
@@ -46,13 +46,13 @@ document.addEventListener('scroll',() => {
 });
 
 
-//Переключение экранов
+//Change screen
 slider.addEventListener('click',(event) => {
     if(event.target.classList.contains('iphone__vertical__screen')) {
-       if(event.target.style.backgroundImage == 'none') {
-        event.target.style.backgroundImage = "url('./assets/img/bg-vertical.png')";
+       if(event.target.style.zIndex == '0') {
+        event.target.style.zIndex = '-1';
        } else {
-        event.target.style.backgroundImage = 'none';
+        event.target.style.zIndex = '0';
        }
     }
     if(event.target.classList.contains('iphone__horizontal__screen')) {
@@ -64,28 +64,52 @@ slider.addEventListener('click',(event) => {
      }
 });
 
-//Карусель
+//Carousel
 
-for ( el  of scrolls)  {
-    el.addEventListener('click',(event) => {
-        if(numSlider == 0) {
-            numSlider++;
-            slider.style.backgroundImage = "url('./assets/img/Slide-2.png')";
-            slider.style.justifyContent = "space-between";
-            document.getElementById('iphone-vertical').style.display = "none";
-            document.getElementById('iphone-horizontal').style.display = "none";
-            document.querySelector('.bg-bottom').style.background = '#648BF0';
-        } else if (numSlider == 1) {
-            numSlider--;
-            slider.style.backgroundImage = "initial";
-            document.getElementById('iphone-vertical').style.display = "initial";
-            document.getElementById('iphone-horizontal').style.display = "initial";
-            document.querySelector('.bg-bottom').style.background = 'initial';
-            slider.querySelector('.iphone__vertical__screen').style.backgroundImage = "url('./assets/img/bg-vertical.png')";    
-            slider.querySelector('.iphone__horizontal__screen').style.backgroundImage = "url('./assets/img/bg-horizontal.png')";    
-        }
+let numSlider=1;
+let rightValue = 1020;
+let counter = 0;
+scrolls[0].addEventListener('click',() => {
+    if(numSlider == 0) { 
+        document.querySelectorAll('.slider-content').forEach(el => el.style.right = '2040px');
+        numSlider = 2;
+    }
+    counter = numSlider*rightValue;
+    let curr = (numSlider-1)*rightValue;
+    numSlider--;
+    let interval = setInterval(() => {        
+        counter -= 10;
+        document.querySelectorAll('.slider-content').forEach(el => {            
+            el.style.right = `${counter}px`;
+            if (el.style.right == `${curr}px`) {
+                clearInterval(interval);
+                return;
+            }                    
+        });
+    },1);
+});
+scrolls[1].addEventListener('click',() => {
+    if(numSlider == 2) { 
+        document.querySelectorAll('.slider-content').forEach(el => el.style.right = '0px');
+        numSlider = 0;
+    }
+    counter = numSlider*rightValue;
+    console.log(numSlider);
+    let curr = (numSlider+1)*rightValue;
+    numSlider++;
+    let interval = setInterval(() => {
+        counter += 10;
+        document.querySelectorAll('.slider-content').forEach(el => {        
+            el.style.right = `${counter}px`;
+            if (el.style.right == `${curr}px`) {
+                clearInterval(interval);                
+                return;
+            }
+            
     });
-}
+},1);   
+});
+
 //Image Interaction
 portfolioImgs.addEventListener('click',(event) => {     
     if (event.target.classList.contains('img-active')) {
