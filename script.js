@@ -170,4 +170,5 @@ CloseMSG.addEventListener('click',() => {
     MassageBlock.classList.add('feedback--hidden');
     header.style.zIndex = "1";
     document.querySelector('body').style.overflow = "initial";
+    document.querySelector(".feedback-form").reset();
 });
