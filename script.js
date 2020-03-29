@@ -26,10 +26,12 @@ document.addEventListener('scroll',() => {
         header.classList.add('sticky-header');  
         headerCont.classList.add('sticky-content');
         headerBottom.classList.add('sticky-bottom');
+        document.getElementById('dropNav').style.top = "8px";
     } else {
         header.classList.remove('sticky-header');
         headerCont.classList.remove('sticky-content');
         headerBottom.classList.remove('sticky-bottom');
+        document.getElementById('dropNav').style.top = "34px";
     }
     
     const section = document.querySelectorAll('section>:first-child');

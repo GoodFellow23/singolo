@@ -33,6 +33,32 @@ p {
     margin-right: 40px;
     
 }
+
+.dropNav {
+    display: none;
+    position:absolute;
+    width: 25px;
+    height: 20px;
+    left: 20px;
+    top: 34px;
+    background-image: url("./assets/icon/Burger-menu-icon.png");
+    cursor: pointer;
+}
+
+
+@media (max-width:375px)  {
+    .header__navigation {
+        display:none;
+    }
+    .header__content {
+       justify-content: center;
+       padding-left: 0;
+    }
+    .dropNav {
+        display: block;
+    }
+}
+
 .header__navigation a {
     font-size: 12px;
     line-height: 6px;
