@@ -67,7 +67,7 @@ slider.addEventListener('click',(event) => {
 //
 
 let numSlider=1;
-let rightValue = 1020;
+let rightValue = 1020; /*window.outerWidth;*/
 let counter = 0;
 scrolls[0].addEventListener('click',() => {
     document.querySelector('.iphone__horizontal__screen').style.backgroundImage = "url('./assets/img/bg-horizontal.png')";
@@ -98,7 +98,6 @@ scrolls[1].addEventListener('click',() => {
         numSlider = 0;
     }
     counter = numSlider*rightValue;
-    console.log(numSlider);
     let curr = (numSlider+1)*rightValue;
     numSlider++;
     let interval = setInterval(() => {

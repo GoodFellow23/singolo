@@ -32,9 +32,15 @@
     </header>
     <section class="slider"><div id="home"></div>
         <div class="wrapper" id="carousel">
-            <div class="slider__scroll slider__scroll-left"  id="slider__scroll">
+            <div class="scrolls">
+                <div class="slider__scroll slider__scroll-left"  id="slider__scroll">
                     <img src="./assets/icon/scroll-left.svg" alt="left" class="scroll-left">
             </div>
+            <div class="slider__scroll slider__scroll-right" id="slider__scroll">
+                    <img src="./assets/icon/scroll-right.svg" alt="right" class="scroll-right">
+            </div>
+            </div>
+            
             <div class="slider-content slider2 " id="slider0"></div>
             <div class="slider-content " id="slider">                
                 <div class="iphone-vertical" id="iphone-vertical">
@@ -51,9 +57,7 @@
                 <div class="bg-bottom"></div>          
             </div>           
             <div class="slider-content slider2 " id="slider2"></div>
-            <div class="slider__scroll slider__scroll-right" id="slider__scroll">
-                    <img src="./assets/icon/scroll-right.svg" alt="right" class="scroll-right">
-            </div>
+            
         </div>
     </section>
     <section class="services"><div id="services"></div>
@@ -158,12 +162,12 @@
         <div class="wrapper">
             <div class="heading about-us__heading">
                 <span class="title portfolio__title">About Us</span>
-                <div class="description">
+                <div class="description description--about">
                     <p class="description__about-us description--darker">Et elit non, sagittis ultricies arcu. Aliquam magna nisl, fermentum
                         non sem eu, lobortis ultricsagittis ultricies arcu. Aliquam magna nisl, fermentum non sem eu, lobortis ultricies tortor</p>
                 </div>
             </div>
-            <div class="layout-3-column layout__employee">
+            <div class="layout-3-column-empl layout__employee">
                 <div class="employee">
                     <div class="employee__photo photo-AdamJensen"></div>
                     <div class="title employee__name">
@@ -231,12 +235,10 @@
                             <!--FIRST NAME -->
                             <div class="feedback-form__input feedback-form__name">                    
                                 <input type="text" name="name" placeholder="Name (Required)" id="name" class="feedback__input" required pattern="[A-Z][A-Za-z' -]+">
-                                <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- @mail -->
                             <div class="feedback-form__input feedback-form__email">                    
                                 <input type="email" name="email" placeholder="Email (Required)" id="email" class="feedback__input" required>
-                                <span class="message-error">Incorrect value</span>
                             </div>
                             <!-- SUBJECT -->
                             <div class="feedback-form__input feedback-form__subject">                    
